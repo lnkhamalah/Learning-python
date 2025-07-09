@@ -1,0 +1,29 @@
+# Learning-python
+This logs my Python learning experience
+yourName = input("What is your name?")
+whatYear = input("What year is it?")
+print(yourName, "thinks it is", whatYear)
+I practiced various forms of inputs and concatenization. This was an example of that.
+# Python Input Practice
+
+This is a simple beginner Python script that practices getting user input and displaying output using `print()`.
+
+## Code overview
+The script:
+- Asks the user for their name.
+- Asks the user for the current year.
+- Prints a sentence combining both inputs.
+
+Example interaction:
+What is your name? Laurine
+What year is it? 2025
+Laurine thinks it is 2025
+
+markdown
+Copy
+Edit
+
+## Skills practiced
+- `input()` function
+- `print()` output formatting
+- String concatenation with commas
