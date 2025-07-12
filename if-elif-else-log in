@@ -1,0 +1,56 @@
+This is a simple Python program that simulates a very basic login portal with hardcoded credentials.  
+It’s part of my beginner Python learning journey and helps practice:
+
+- User input handling
+- Basic conditional statements (`if`, `elif`, `else`)
+- Simple authentication logic
+
+---
+
+## 💡 What this script does:
+- Greets the user as they "log in."
+- Accepts user input for:
+  - `username`
+  - `password`
+- Implements conditional logic to decide what welcome message to show:
+  - If the username is `"admin"` and the password is `"1234"`, they see:  
+    `"Welcome, admin!"`
+  - If the username is `"guest"`, they see:  
+    `"Welcome, guest!"` (no password required)
+  - For all other inputs, the user sees:  
+    `"Welcome, user!"`
+
+---
+
+## 📚 Skills practiced:
+- `input()` for user interaction
+- `if`, `elif`, `else` for flow control
+- Simple logical conditions (`and` operator)
+- Basic understanding of authentication concepts
+
+---
+
+## ▶️ How to run:
+Run this script in a Python-capable environment (Replit, local terminal, etc.):
+
+python3 microhard_login.py
+
+yaml
+Copy
+Edit
+
+---
+
+⭐️ **Project purpose:**  
+This is part of my **100 Days of Python journey** and demonstrates an early milestone:  
+Learning how to control program flow and simulate basic decision-making.
+
+print("Welcome to the MicroHard log-in portal.State your username and password.")
+username = input("Username: ")
+password = input ("Password: ")
+if username == "admin" and password == "1234":
+  print("Welcome, admin!")
+elif username == "guest":
+  print("Welcome, guest!")
+else:
+  print ("Welcome, user!")
