@@ -1,0 +1,45 @@
+# Python Character Picker – Beginner Practice Project
+
+This is a simple interactive Python script written as part of my beginner Python learning journey.  
+It demonstrates conditional logic, user input handling, and terminal text styling using ANSI escape codes.
+
+---
+
+## 🎯 What this script does:
+- Prompts the user with a question about their favorite book character.
+- Accepts user input for a favorite character.
+- Prints a different response depending on the input:
+  - Recognizes `"Alice"` (case insensitive) and prints a welcome message in **blue**.
+  - Recognizes variations of `"The Mad Hatter"` and prints a colorful Mad Hatter quote in **red**.
+  - For all other inputs, prints a friendly fallback message.
+
+---
+
+## 📚 Skills practiced:
+- Python `input()` and `print()` functions
+- Basic conditional statements (`if`, `elif`, `else`)
+- String comparison
+- Case handling with `or` and `in` statements
+- ANSI escape codes for colorized terminal output:
+  - `\033[34m` for blue
+  - `\033[31m` for red
+  - `\033[0m` to reset text color
+
+---
+print("I love that you love to read! Who is your favorite book character? " +
+  "\033[34mAlice\033[0m, from Alice in Wonderland, or " +
+  "\033[31mthe Mad Hatter?\033[0m")
+
+favoriteBookCharacter = input("Who's your favorite Character?")
+
+if favoriteBookCharacter == "Alice" or favoriteBookCharacter == "alice":
+  print("\033[34mWelcome to Wonderland, Alice!\033[0m")
+elif favoriteBookCharacter in ["the Mad Hatter", "The Mad Hatter", "Mad Hatter", "mad hatter", "the mad hatter"]:
+  print("\033[31mI'm afraid so. You're entirely bonkers. But I'll tell you a secret. All the best people are.\033[0m")
+else:
+  print("That's a great character, too! Way to take your own path!")
+
+## 💻 Example interaction:
+I love that you love to read! Who is your favorite book character? Alice, from Alice in Wonderland, or the Mad Hatter?
+Who's your favorite Character? Mad Hatter
+I'm afraid so. You're entirely bonkers. But I'll tell you a secret. All the best people are.
