@@ -1,0 +1,24 @@
+# Colorful MadLibs Story – Python Beginner Project
+
+This is a simple, interactive Python project where I practiced:
+- User input with `input()`
+- Variable assignment and reuse
+- String formatting and concatenation
+- ANSI escape codes for **colored terminal output**
+
+---
+
+## 📖 What this script does:
+The script:
+1️⃣ Prints a **green-colored welcome message**  
+2️⃣ Prompts the user for:
+- Their name
+- Their pet’s name
+- Their pet’s color
+- Their favorite task
+
+3️⃣ Generates a short story using the inputs, with names and key words printed in **green text** using ANSI escape codes (`\033[32m` for green, `\033[0m` to reset).
+
+---
+
+## 💻 Example interaction:
